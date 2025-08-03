@@ -10,18 +10,18 @@ public class CommandsManager {
 
     private JDA JDA;
 
-    private List<TrustCommandsImpl> commandMap = new ArrayList<>();
+    private List<DJLCommandsImpl> commandMap = new ArrayList<>();
 
     public CommandsManager(JDA JDA) {
         this.JDA = JDA;
     }
 
-    public <T extends ListenerAdapter & TrustCommandsImpl> CommandsManager createCommand(TrustCommandsImpl command) {
+    public <T extends ListenerAdapter & DJLCommandsImpl> CommandsManager createCommand(DJLCommandsImpl command) {
         this.commandMap.add(command);
         return this;
     }
 
-    public <T extends ListenerAdapter & TrustCommandsImpl> CommandsManager build() {
+    public <T extends ListenerAdapter & DJLCommandsImpl> CommandsManager build() {
         if (!this.commandMap.isEmpty()) {
 
             commandMap.forEach(command -> {
