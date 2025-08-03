@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class TrustCommands extends ListenerAdapter implements TrustCommandsImpl {
+public class DJLCommands extends ListenerAdapter implements DJLCommandsImpl {
 
     @Override
     public String command() {
