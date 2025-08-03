@@ -9,7 +9,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public interface TrustCommandsImpl {
+public interface DJLCommandsImpl {
     String command();
     String description();
     List<OptionData> options();
